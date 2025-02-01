@@ -1,7 +1,12 @@
 /********************************** Nav Menu **********************************/
 function openNav() {
+  if ((window.innerWidth < 1000)){
 	document.getElementById("NavMenu")
+		.style.width = "50%";
+  } else {
+    document.getElementById("NavMenu")
 		.style.width = "30%";
+  }
 	document.getElementById("page")
 		.style.marginLeft = "0%";
 }
@@ -12,6 +17,8 @@ function closeNav() {
 	document.getElementById("page")
 		.style.marginLeft = "0";
 }
+
+showContainer('tabsdiv');
 
 function showContainer(content){
   navcontent = document.getElementsByClassName("Navtabs");
