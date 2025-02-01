@@ -13,8 +13,7 @@ function closeNav() {
 		.style.marginLeft = "0";
 }
 
-function showContent(content) {
-
+function showContainer(content){
   navcontent = document.getElementsByClassName("Navtabs");
 
   for(i=0; i < navcontent.length; i++){
@@ -23,28 +22,48 @@ function showContent(content) {
 
   document.getElementById(content).style.display = "block";
 
-	//document.getElementById("page")
-		//.textContent = content;
+  // Scroll to the top of the page
+  window.scrollTo(0, 0);
+}
+
+function showContent(content) {
+
+  showContainer(content);
 		
 	closeNav();
+
+  clearHTabsColor();
+}
+
+function clearHTabsColor(){
+  var i, tabs;
+
+  tabs = document.getElementsByClassName("tabButton");
+  
+  for (i = 0; i < tabs.length; i++) {
+
+    tabs[i].style.background = "";
+
+  }
 }
 
 /********************************** Main Tabs **********************************/
 //document.getElementById("defaultOpen").click();
 
 function openTab(elmnt, name){
-    showContent('tabsdiv');
-    var i, tabcontent, tablinks;
+  showContainer('tabsdiv');
 
-    tabcontent = document.getElementsByClassName("tabcontent");
+  var i, tabcontent, tablinks;
 
-    tablinks = document.getElementsByClassName("tabButton");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.background = "";
-    }
+  tabcontent = document.getElementsByClassName("tabcontent");
 
-    document.getElementById(name).style.display = "block";
-    elmnt.style.background = "linear-gradient(135deg,rgba(63, 1, 1, 0.692),rgba(65, 0, 0,1),rgba(63, 1, 1, 0.692))";
+  tablinks = document.getElementsByClassName("tabButton");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.background = "";
+  }
+
+  document.getElementById(name).style.display = "block";
+  elmnt.style.background = "linear-gradient(135deg,rgba(63, 1, 1, 0.692),rgba(65, 0, 0,1),rgba(63, 1, 1, 0.692))";
 }
 
 /* Used to prevent right click menu 
