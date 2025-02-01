@@ -661,7 +661,6 @@ form textarea{
     background: var(--grad);
     display: flex;
     flex-direction: column;
-    text-align: justify;
     line-height: 300%;
 }
 
