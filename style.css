@@ -56,7 +56,7 @@ a {
     left: 0;
     cursor: pointer;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.35s;
     padding-top: 60px;
     z-index: 15;
 }
@@ -65,7 +65,6 @@ a {
     display: block;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    transition: 0.3s;
     font-size: 18px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -154,6 +153,12 @@ a {
         display: flex;
         flex-direction: row;
         overflow-y: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .Tabs::-webkit-scrollbar {
+        display: none;
     }
 
     #Logo{
@@ -190,7 +195,11 @@ a {
 .intro{
     text-align: center;
     justify-items: center;
-    line-height: 300%;
+    line-height: 250%;
+}
+
+#autoTypeCon{
+    font-size: 90%;
 }
 
 .auto-type{
@@ -667,7 +676,7 @@ form textarea{
     background: var(--grad);
     display: flex;
     flex-direction: column;
-    line-height: 300%;
+    line-height: 200%;
 }
 
 #ToS h1{
@@ -686,6 +695,7 @@ form textarea{
 #ToS ol li {
     text-transform: uppercase;
     font-weight: bold;
+    padding-top: 5%;
 }
 
 #ToS dd{
@@ -707,8 +717,7 @@ form textarea{
     background: var(--grad);
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    line-height: 300%;
+    line-height: 200%;
 }
 
 #license p{
