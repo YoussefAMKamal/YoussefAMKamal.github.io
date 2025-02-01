@@ -226,6 +226,12 @@ a {
     pointer-events: none; /* Used to prevent open image in new tab */
 }
 
+@media(max-width: 1500px) {
+    #ProfilePic {
+        min-width: 300px;
+    }
+}
+
 #AboutBody {
     text-align: justify;
     padding-left: 50px;
@@ -345,11 +351,13 @@ a {
 
 .tabC h2 {
     font-weight: bold;
+    font-size: 140%;
     max-width: 60%;
 }
 
 .tabC h3 {
     font-weight: normal;
+    color: #cfcfcf;
 }
 
 @media (max-width: 1000px){
@@ -359,6 +367,11 @@ a {
 
     .right{
         position: static;
+    }
+
+    .tabC{
+        text-align: center;
+        padding: 0 2%;
     }
 
     .tabC h2 {
@@ -374,11 +387,6 @@ a {
     .tabBtn{
         padding: 5% 5%;
         gap: 10%;
-    }
-
-    .tabC{
-        text-align: center;
-        padding: 0 2%;
     }
 
     .tabC div{
