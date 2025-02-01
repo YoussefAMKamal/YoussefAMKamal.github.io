@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Youssef Ahmed</title> <!-- This is the web page title seen on the tab -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Change web page width according to screen size -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="Files/Images/logo.ico">
+
+    </head>
+
+    <body>
+        
+        <!-- Container Start -->
+        <div class="container">
+
+            <!-- Nav Start -->
+            <div id="NavMenu">
+
+                <a id="closeBtn" onclick="closeNav()">x</a>
+
+                <a onclick="showContent('tabsdiv')">Home</a>
+
+                <a onclick="showContent('ToS')">Terms of Service</a>
+
+                <a onclick="showContent('license')">licence</a>
+
+            </div>
+            <!-- Nav End -->
+
+            <!-- Page Start -->
+            <div id="page">
+
+                <!-- Header Start -->
+                <header class="Tabs">
+
+                    <button id="NavMenuBtn" onclick="openNav()">&#9776</button>
+
+                    <img id="Logo" src="Files/Images/Logo.png" />
+
+                    <a href="#About"><button class="tabButton" onclick="openTab(this, 'About')" id="defaultOpen">About</button></a>
+                    <a href="#Resume"><button class="tabButton" onclick="openTab(this, 'Resume')">Resume</button></a>
+                    <a href="#Skills"><button class="tabButton" onclick="openTab(this, 'Skills')">Skills</button></a>
+                    <a href="#Projects"><button class="tabButton" onclick="openTab(this, 'Projects')">Projects</button></a>
+                    <a href="#Contact-Me"><button class="tabButton" onclick="openTab(this, 'Contact-Me')">Contact Me</button></a>
+                
+                </header>
+                <!-- Header End -->
+
+                <!-- Tabs Content Start -->
+                <div id="tabsdiv" class="Navtabs">
+
+                    <!-- About Start -->
+                    <div id="About" class="tabcontent">
+                        
+                        <div class="intro">
+                            <h1>Youssef Ahmed</h1>
+
+                            <div id="autoTypeCon">
+
+                                <h2>I'm a <span class="auto-type"></span></h2>
+
+                            </div>
+                            
+                            <p id="USP">"Helping people create their websites without the hassle"</p>
+                        </div>
+
+                        <hr /> <!-- Makes a line -->
+                        
+                        <div id="AB">
+
+                            <img id="ProfilePic" src="Files/Images/Youssef-Ahmed.png" />
+                            
+                            <div>
+
+                                <h3>About Me</h3>
+
+                                <p id="AboutBody">
+                                    Hello, I am Youssef Ahmed, A motivated .NET web developer with a strong foundation in C#, HTML, CSS, JavaScript, ASP .NET Core, and MVC. Eager to bring my problem-solving skills, adaptability, and passion for learning to be up to the trend to help you achieve your targets in the best way possible.
+                                </p>
+                            
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- About End -->
+
+                    <!-- Resume Start -->
+                    <div id="Resume" class="tabcontent">
+                        
+                        <span id="ResumeHead">
+                            <h1>Resume</h1>
+                            <a href="Files/Youssef Ahmed C.V.pdf" download="Youssef Ahmed CV"><button>Download CV <img src="Files/Images/download-arrow.png"/></button></a>
+                        </span>
+                        
+
+                        <div id="ResumeTabs">
+                            <span>
+                                <button id="expBtn" class="tabBtn" onclick="openTab2(this, 'expC', '#c60f0f96')">Experience</button>
+                                <button id="eduBtn" class="tabBtn" onclick="openTab2(this, 'eduC', '#c60f0f96')">Education</button>
+                                <button id="expBtn" class="tabBtn" onclick="openTab2(this, 'corC', '#c60f0f96')">Courses</button>
+                            </span>
+                        </div>
+
+                        <div id="expC" class="tabC">
+
+                            <div>
+                                <span>
+                                    <h2>Full Stack .Net Web Developer</h2>
+                                    <h3 class="right">Jan 2025 - Present</h3>
+                                </span>
+                                <h3>Freelance</h3>
+                            </div>
+
+                        </div>
+
+                        <div id="eduC" class="tabC">
+
+                            <div>
+                                <span>
+                                    <h2>Full Stack .Net Web Developer</h2>
+                                    <h3 class="right">Oct 2024 - Present</h3>
+                                </span>
+                                <h3>Digital Egypt Pioneers Initiative (DEPI)</h3>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <h2>Bachelor of Mechatronics Engineering</h2>
+                                    <h3 class="right">Sep 2018 - Sep 2023</h3>
+                                </span>
+                                <h3>Ain Shams University</h3>
+                            </div>
+
+                        </div>
+
+                        <div id="corC" class="tabC">
+
+                            <div>
+                                <span>
+                                    <h2>Full Stack .Net Web Developer</h2>
+                                    <h3 class="right">Oct 2024 - Present</h3>
+                                </span>
+                                <h3>Digital Egypt Pioneers Initiative (DEPI)</h3>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <h2>Master Embedded Systems Diploma</h2>
+                                    <h3 class="right">Feb 2024 - Sep 2024</h3>
+                                </span>
+                                <h3>Learn in Depth</h3>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <h2>Embedded Systems Professional Nanodegree Program</h2>
+                                    <h3 class="right">Oct 2022 - Dec 2022</h3>
+                                </span>
+                                <h3>Udacity</h3>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <h2>Embedded Systems Diploma</h2>
+                                    <h3 class="right">Jul 2022 - Nov 2022</h3>
+                                </span>
+                                <h3>Amit</h3>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <h2>Python for Everybody</h2>
+                                    <h3 class="right">Aug 2022</h3>
+                                </span>
+                                <h3>University of Michigan (Coursera)</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Resume End -->
+
+                    <!-- Skills Start -->
+                    <div id="Skills" class="tabcontent">
+
+                        <div id="Skills-Block">
+
+                            <h1>Skills</h1>
+
+                            <div id="skillsB">
+
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>C</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <span class="c"></span>
+                                    </div>
+                                </div>
+
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>Embedded C</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <span class="embeddedc"></span>
+                                    </div>
+                                </div>
+
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>C#</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <span class="cs"></span>
+                                    </div>
+                                </div>
+
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>HTML</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <span class="html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>CSS</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <span class="css"></span>
+                                    </div>
+                                </div>
+
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <span class="javascript"></span>
+                                    </div>
+                                </div>
+
+                                <div class="bar">
+
+                                    <div class="info">
+
+                                        <span>SQL</span>
+
+                                    </div>
+                                    <div class="progress-bar">
+
+                                        <span class="sql"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skills End -->
+
+                    <!-- Projects Start-->
+                    <div id="Projects" class="tabcontent">
+
+                        <h1>Projects</h1>
+
+                        <h2>Web</h2>
+
+                            <div class="ProjectImgsDiv">
+
+                                <div class="ProjectImg">
+                                    <img src="Files/Images/Guessing Game.webp" />
+
+                                    <a href="https://github.com/YoussefAMKamal/Guessing-Game">
+                                        <h3>Guessing Game</h3>
+                                    </a>
+                                </div>
+
+                                <div class="ProjectImg">
+                                    <img src="Files/Images/Running Balls.gif" />
+
+                                    <a href="https://github.com/YoussefAMKamal/Running-Balls">
+                                        <h3>Running Balls</h3>
+                                    </a>
+                                </div>
+
+                            </div>
+                            
+                        <hr />
+                        
+                        <h2>Embedded</h2>
+
+                            <div class="ProjectImgsDiv">
+
+                                <div class="ProjectImg">
+                                    <img src="Files/Images/Glove.png" />
+
+                                    <a href="https://github.com/YoussefAMKamal/Glove-For-Deaf">
+                                        <h3>Glove For Deaf</h3>
+                                    </a>
+                                </div>
+
+                                <div class="ProjectImg">
+                                    <img src="Files/Images/Autonomous Vehicle.gif" />
+
+                                    <a href="https://github.com/YoussefAMKamal/Autonomous-Vehicle">
+                                        <h3>Autonomous Vehicle</h3>
+                                    </a>
+                                </div>
+
+                                <div class="ProjectImg">
+                                    <img src="Files/Images/Traffic Light.jpg" />
+
+                                    <a href="https://github.com/YoussefAMKamal/On-demand-Traffic-Light-Control">
+                                        <h3>On Demand Traffic Light Control</h3>
+                                    </a>
+                                </div>
+
+                                <div class="ProjectImg">
+                                    <img src="Files/Images/Payment Application.jpg" />
+
+                                    <a href="https://github.com/YoussefAMKamal/Payment-Application">
+                                        <h3>Payment Application</h3>
+                                    </a>
+                                </div>
+
+                                <div class="ProjectImg">
+                                    <img src="Files/Images/School DB.png" />
+
+                                    <a href="https://github.com/YoussefAMKamal/School-DB">
+                                        <h3>School DB</h3>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        <hr />
+                        
+                        <h2>Others</h2>
+
+                            <div class="ProjectImgsDiv">
+
+                                <div class="ProjectImg">
+                                    <img src="Files/Images/Windows Cleaner.jpg" />
+
+                                    <a href="https://github.com/YoussefAMKamal/Windows-Cleaner">
+                                        <h3>Windows Cleaner</h3>
+                                    </a>
+                                </div>
+
+                                <div class="ProjectImg">
+                                    <img src="Files/Images/Shutdown Timer.png" />
+
+                                    <a href="https://github.com/YoussefAMKamal/Shutdown-Timer">
+                                        <h3>Shutdown Timer</h3>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                    </div>
+                    <!-- Projects End-->
+
+                    <!-- Contact Me Start-->
+                    <div id="Contact-Me" class="tabcontent">
+
+                        <h1>Get In Touch</h1>
+
+                        <div id="GetinTouch">
+
+                            <div id="conData">
+                                <div>
+                                    <h3>Phone</h3>
+                                    <p>(+20) 155 577 7997</p>
+                                </div>
+
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>YoussefAhmedMKamal@gmail.com</p>
+                                </div>
+                                
+                                <div id="AccSection">
+                                    <h3>My Accounts</h3>
+                                    <span>
+                                        <a href="https://www.upwork.com/freelancers/~0159e66b4aaeffc7ae"><img class="AccountsPng" src="Files/Images/upwork.png" /></a>
+                                        <a href="https://www.freelancer.com/u/YoussefAMKamal"><img class="AccountsPng" src="Files/Images/freelancer.png" /></a>
+                                        <a href="https://khamsat.com/user/youssefamkamal"><img class="AccountsPng" src="Files/Images/khamsat.png" /></a>
+                                        <a href="https://www.linkedin.com/in/youssefahmedmkamal/"><img class="AccountsPng" src="Files/Images/linkedin.png" /></a>
+                                        <a href="https://github.com/YoussefAMKamal"><img class="AccountsPng" src="Files/Images/github.png" /></a>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <form action="https://api.web3forms.com/submit" method="POST">
+
+                                <input type="hidden" name="access_key" value="46d200e6-d434-4430-89df-17334ee2b6bf">
+
+                                <h4>Name</h4>
+                                <input type="text" name="Name" placeholder=" Write your name here" required autocomplete="on"></input>
+
+                                <h4>Email</h4>
+                                <input type='email' name="Email" maxlength="100" minlength="10" placeholder=" Write your email here" required autocomplete="on"></input>
+
+                                <h4>Message</h4>
+                                <textarea name='message' role="textbox" maxlength="1200" placeholder="Write your message here" required></textarea>
+
+                                <div id="subDiv">
+                                    <button type="submit" id="submitBtn">Submit</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Contact Me End-->
+
+                </div>
+                <!-- Tabs Content End-->
+
+            </div>
+            <!-- Contanier End-->
+
+            <!-- Terms of Service Start-->
+            <div id="ToS" class="Navtabs">
+                <h1>Terms Of Service</h1>
+                <p>Last Updated: 02/01/2025</p>
+                <ol>
+                    <li>Introduction</li>
+                        <dd>These Terms of Service govern your use of our web development services. By engaging our services, you agree to comply with these terms. If you do not agree, please refrain from using our services.</dd>
+                    <li>Services Provided</li>
+                        <dd>We provide web development services, including but not limited to website design, backend development, UI/UX improvements, and website maintenance. All services rendered will be in accordance with Islamic ethical principles and industry best practices.</dd>
+                    <li>Ethical Considerations</li>
+                        <dd>
+                            As a Muslim web developer, I adhere to Islamic guidelines in my work, which means:
+                            <ul>
+                                <li>I will not develop, host, or assist in projects that promote haram (prohibited) content, including but not limited to gambling, adult content, alcohol, or any other unethical material.</li>
+                                <li>I aim to promote halal (permissible) and ethical business practices in all my projects.</li>
+                                <li>I respect privacy and confidentiality in accordance with Islamic and professional standards.</li>
+                            </ul>
+                        </dd>
+                    <li>Client Responsibilities</li>
+                        <dd>
+                            Clients engaging my services agree to:
+                            <ul>
+                                <li>Provide clear and honest project requirements.</li>
+                                <li>Ensure that their content is lawful and aligns with ethical standards.</li>
+                                <li>Communicate openly and respond promptly to queries to ensure project progress.</li>
+                            </ul>
+                        </dd>
+                    <li>Payment & Pricing</li>
+                        <dd>
+                            <ul>
+                                <li>Pricing for services will be agreed upon before work begins.</li>
+                                <li>Payment terms will be outlined in a separate contract or invoice.</li>
+                                <li>A deposit may be required before work commences.</li>
+                                <li>Failure to make timely payments may result in project delays or termination of services.</li>
+                            </ul>
+                        </dd>
+                    <li>Revisions & Modifications</li>
+                        <dd>
+                            <ul>
+                                <li>Clients may request a limited number of revisions as specified in the agreement.</li>
+                                <li>Major modifications beyond the agreed scope may incur additional charges.</li>
+                            </ul>
+                        </dd>
+                    <li>Confidentiality</li>
+                        <dd>All client data and project details will be kept confidential and not shared with third parties without consent, except as required by law.</dd>
+                    <li>Limitation of Liability</li>
+                        <dd>We strive to provide high-quality work, but we are not liable for any direct or indirect damages resulting from website failures, security breaches, or third-party actions.</dd>
+                    <li>Governing Law</li>
+                        <dd>
+                            <ul>
+                                <li>Either party may terminate the agreement with prior notice as outlined in the contract.</li>
+                                <li>No refunds will be provided for work already completed.</li>
+                                <li>If a project is terminated due to a client’s failure to comply with these terms, outstanding payments must still be settled.</li>
+                            </ul>
+                        </dd>
+                    <li>Governing Lawd</li>
+                        <dd>These Terms of Service shall be governed by the laws of Egypt and Islamic ethical principles.</dd>
+                    <li>Modifications</li>
+                        <dd>We reserve the right to modify these terms at any time. Continued use of our services after changes means you accept the updated terms.</dd>
+                    <li>Contact Information</li>
+                        <dd>For any inquiries regarding these terms, please contact me.</dd>
+                </ol>
+            </div>
+            <!-- Terms of Service End-->
+
+            <!-- License Start-->
+            <div id="license" class="Navtabs">
+                <h3>Copyright (c) 2025 Youssef Ahmed</h3>
+
+                <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+                    
+                <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+                    
+                <p style="font-weight: bold;">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+            </div>
+            <!-- License End-->
+
+            <!-- Footer Start-->
+            <footer id="footer">
+                
+                <div class="contact">
+                    <h3>Phone</h3>
+                    <p>(+20) 155 577 7997</p>
+                </div>
+
+                <div class="contact">
+                    <h3>My Accounts</h3>
+                    <span>
+                        <a href="https://www.upwork.com/freelancers/~0159e66b4aaeffc7ae"><img class="Accounts" src="Files/Images/upwork.png" /></a>
+                        <a href="https://www.freelancer.com/u/YoussefAMKamal"><img class="Accounts" src="Files/Images/freelancer.png" /></a>
+                        <a href="https://khamsat.com/user/youssefamkamal"><img class="Accounts" src="Files/Images/khamsat.png" /></a>
+                        <a href="https://www.linkedin.com/in/youssefahmedmkamal/"><img class="Accounts" src="Files/Images/linkedin.png" /></a>
+                        <a href="https://github.com/YoussefAMKamal"><img class="Accounts" src="Files/Images/github.png" /></a>
+                    </span>
+                </div>
+                
+                <div class="contact" id="contEm">
+                    <h3>Email</h3>
+                    <p>YoussefAhmedMKamal@gmail.com</p>
+                </div>
+
+                <div class="contact" id="licence">
+                    <p>© 2025 By Youssef Ahmed</p>
+                </div>
+
+            </footer>
+            <!-- Footer End -->
+
+        </div>
+        <!-- Page End -->
+
+        <script src="script.js"></script>
+
+        <!-- Load typing library from the CDN -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+         <!-- Setup and start typing animation! -->
+        <script>
+            var typed = new Typed(".auto-type",{
+                strings: [".Net Web Developer", "Programmer", "Mechatronics Engineer"],
+                typeSpeed : 50, // Speed in milliseconds
+                backSpeed : 50,
+                smartBackspace: true, // Backspace till the remain is the same as new
+                loop : true
+            })
+
+        </script>
+
+    </body>
+
+</html>
