@@ -153,6 +153,7 @@ a {
         height: 50px;
         display: flex;
         flex-direction: row;
+        overflow-y: scroll;
     }
 
     #Logo{
@@ -210,6 +211,7 @@ a {
 
 #ProfilePic {
     width: 30vw;
+    min-width: 200px;
     max-width: 500px;
     border-radius: 170px;
     pointer-events: none; /* Used to prevent open image in new tab */
@@ -651,6 +653,10 @@ form textarea{
 
     form textarea {
         width: 80%;
+    }
+
+    #submitBtn {
+        right: 20%;
     }
 }
 
