@@ -36,6 +36,8 @@ function showContainer(content){
 function showContent(content) {
 
   showContainer(content);
+
+  localStorage.setItem('lasttab', content);
 		
 	closeNav();
 
@@ -118,3 +120,19 @@ const bar = document.querySelectorAll('.progress-bar span');
 
 // Loop over the elements and add each one to the observer
 bar.forEach((element) => observer.observe(element));
+
+/********************************** Same Position After Reloading **********************************/
+document.addEventListener("DOMContentLoaded", function() { 
+  var scrollpos = localStorage.getItem('scrollpos');
+  if (!isNaN(scrollpos)) {
+    setTimeout(() => {
+      window.scrollTo(0, scrollpos);
+    }, 100);}
+
+  let savedTab = localStorage.getItem('lasttab') || 'tabsdiv';
+  showContent(savedTab);
+});
+
+window.onbeforeunload = function() {
+  localStorage.setItem('scrollpos', window.scrollY);
+};
