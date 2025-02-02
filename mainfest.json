@@ -2,7 +2,7 @@
     "name": "Youssef Ahmed Porfolio",
     "short_name": "YA",
     "start_url": "/index.html",
-    "display": "fullscreen",
+    "display": "standalone",
     "background_color": "#000000",
     "theme_color": "#580202",
     "icons": [
