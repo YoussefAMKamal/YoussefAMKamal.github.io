@@ -57,7 +57,7 @@ a {
     left: 0;
     cursor: pointer;
     overflow-x: hidden;
-    transition: 0.2s;
+    transition: 0.1s;
     padding-top: 60px;
     z-index: 15;
 }
@@ -95,6 +95,10 @@ a {
 @media (max-width: 600px){
     #NavMenu a:not([id="closeBtn"]){
         font-size: 14px;
+    }
+
+    #NavMenu img{
+        width: 30px;
     }
 }
 
