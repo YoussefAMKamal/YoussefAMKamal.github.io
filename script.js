@@ -1,6 +1,3 @@
-document.documentElement.requestFullscreen();
-window.navigator.standalon = true;
-
 /********************************** Nav Menu **********************************/
 function openNav() {
   if ((window.innerWidth < 800)){

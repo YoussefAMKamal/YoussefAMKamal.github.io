@@ -124,7 +124,7 @@ a {
 /************************** Header **************************/
 
 .Tabs {
-    position: sticky;
+    position: fixed;
     top: 0;
     text-align: right;
     width: 100%;
@@ -156,13 +156,13 @@ a {
 }
 
 .tabcontent {
-    padding: 10% 10%;
+    padding: 5% 15%;
     height: 100%;
 }
 
-@media (min-width: 600px){
+@media (max-width: 600px){
     .tabcontent {
-        padding: 50px 15%;
+        padding: 10% 15%;
     }
 }
 
@@ -226,6 +226,7 @@ a {
 /************************** About **************************/
 
 .intro{
+    padding-top: 5%;
     text-align: center;
     justify-items: center;
     line-height: 250%;
@@ -333,13 +334,6 @@ a {
     padding-top: 0%;
 }
 
-@media (max-width: 1000px){
-    #ResumeTabs {
-        padding-top: 5%;
-        justify-content: center;
-    }
-}
-
 #ResumeTabs span{
     display: flex;
     flex-direction: row;
@@ -394,6 +388,10 @@ a {
 }
 
 @media (max-width: 1000px){
+    #ResumeTabs {
+        padding-top: 5%;
+        justify-content: center;
+    }
     .tabC span{
         flex-direction: column;
     }
