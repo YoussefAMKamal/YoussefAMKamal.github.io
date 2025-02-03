@@ -1,6 +1,6 @@
 /********************************** Nav Menu **********************************/
 function openNav() {
-  if ((window.innerWidth < 1000)){
+  if ((window.innerWidth < 800)){
 	document.getElementById("NavMenu")
 		.style.width = "50%";
   } else {
