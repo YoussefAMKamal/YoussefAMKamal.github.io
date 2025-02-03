@@ -743,6 +743,9 @@ form textarea{
 }
 
 @media (max-width: 1000px){
+    #certificates{
+        padding: 20% 10%;
+    }
     #certificates div{
         grid-template-columns: auto;
     }
@@ -789,6 +792,12 @@ form textarea{
     text-transform: none;
 }
 
+@media (max-width: 600px){
+    #ToS{
+        padding: 20% 10%;
+    }
+}
+
 /************************** License **************************/
 
 #license{
@@ -801,6 +810,12 @@ form textarea{
 
 #license p{
     padding: 2% 5%;
+}
+
+@media (max-width: 600px){
+    #license{
+        padding: 20% 10%;
+    }
 }
 
 /************************** Footer **************************/
