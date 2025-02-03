@@ -24,7 +24,8 @@ ID Selector         #[ID]
 body, html{
     background-color: var(--backcolor);
     color: white;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     scroll-behavior: smooth;
 }
 
