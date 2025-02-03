@@ -1,16 +1,21 @@
 {
     "name": "Youssef Ahmed Porfolio",
     "short_name": "YA",
-    "start_url": "/index.html",
+    "start_url": "/?source=pwa",
     "display-override": ["window-control-overlay", "standalone"],
     "display": "fullscreen",
-    "background_color": "#000000",
+    "background_color": "#010101",
     "theme_color": "#580202",
     "icons": [
       {
-        "src": "/Files/Images/logo.ico",
-        "sizes": "256x256",
-        "type": "image/ico"
+        "src": "/Files/Images/Logo_192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/Files/Images/Logo_512.ico",
+        "sizes": "512x512",
+        "type": "image/png"
       }
     ]
   }
