@@ -1,3 +1,5 @@
+document.documentElement.requestFullscreen();
+
 /********************************** Nav Menu **********************************/
 function openNav() {
   if ((window.innerWidth < 800)){
