@@ -306,6 +306,7 @@ a {
     width: 25%;
     min-width: 140px;
     height: 85%;
+    min-height: 40px;
     background: linear-gradient(270deg,#131010,#302e2e);
     color: white;
     border: none;
@@ -327,11 +328,9 @@ a {
     transform: translateY(4px)
 }
 
-
 #ResumeTabs {
     display: flex;
     justify-content: right;
-    padding-top: 0%;
 }
 
 #ResumeTabs span{
@@ -411,13 +410,29 @@ a {
 }
 
 @media (max-width: 600px){
+
     #ResumeHead{
-        gap: 30%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ResumeHead a{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        height: 50px;
+        position: relative;
+    }
+
+    #ResumeHead button{
+        position: absolute;
     }
 
     .tabBtn{
-        padding: 5% 5%;
-        gap: 10%;
+        width: 100vw;
+        min-width: 0;
     }
 
     .tabC div{
@@ -578,6 +593,11 @@ span.sql{width: 70%;}
 
 @media (max-width:600px){
 
+    #Projects h1{
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
     #Projects h2{
         text-align: center;
     }
@@ -684,6 +704,10 @@ form textarea{
 }
 
 @media (max-width: 600px){
+    #Contact-Me h1{
+        text-align: center;
+    }
+
     #GetinTouch {
         padding-bottom: 20%;
         text-align: center;
